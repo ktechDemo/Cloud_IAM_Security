@@ -1,0 +1,24 @@
+[
+    {
+        "UserName": "admin_user",
+        "HasMFA": true,
+        "Policies": []
+    },
+    {
+        "UserName": "auditor_user",
+        "HasMFA": true,
+        "Policies": []
+    },
+    {
+        "UserName": "dev_user",
+        "HasMFA": true,
+        "Policies": []
+    },
+    {
+        "UserName": "ktech",
+        "HasMFA": true,
+        "Policies": [
+            "AdministratorAccess"
+        ]
+    }
+]
