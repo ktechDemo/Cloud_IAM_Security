@@ -1,6 +1,6 @@
 import boto3
 
-# Create a CloudTrail client
+# Create a CloudTrail clien!
 client = boto3.client('cloudtrail')
 
 # Fetch the last 10 events
