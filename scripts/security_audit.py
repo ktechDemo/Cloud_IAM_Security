@@ -1,7 +1,7 @@
 import boto3
 import json
 
-# Create an IAM client
+# Create an IAM client!
 iam = boto3.client('iam')
 
 # List all IAM users
