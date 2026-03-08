@@ -13,7 +13,7 @@ for group in groups:
     except Exception as e:
             print(f"Group {group} may already exist: {e}")
 
-# Step 2: Create users and assign to groups
+# Create users and assign to groups
 users = {
 'admin_user': 'Admins',
 'dev_user': 'Developers',
@@ -28,7 +28,7 @@ for user, group in users.items():
     except Exception as e:
             print(f"User {user} may already exist: {e}")
 
-# Step 3: Attach group policies
+# Attach group policies
 policies = {
 'Admins': 'arn:aws:iam::aws:policy/AdministratorAccess',
 'Developers': 'arn:aws:iam::aws:policy/PowerUserAccess',
