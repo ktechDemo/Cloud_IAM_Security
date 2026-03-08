@@ -4,13 +4,13 @@ import json
 # Create an IAM client
 iam = boto3.client('iam')
 
-# Step 1: List all IAM users
+# List all IAM users
 users = iam.list_users()['Users']
 
 # Prepare the audit report
 audit_report = []
 
-# Step 2: Loop through each user and check their MFA status and attached policies
+# Loop through each user and check their MFA status and attached policies
 for user in users:
     user_name = user['UserName']
     print(f"Checking MFA and policies for {user_name}...")  # Debugging line
@@ -33,7 +33,7 @@ for user in users:
     # Print out the audit details for each user (optional debug line)
     print(f"User: {user_name}, MFA: {'Enabled' if has_mfa else 'Not Enabled'}, Policies: {', '.join(policies)}")
 
-# Step 3: Save the audit report to a JSON file
+# Save the audit report to a JSON file
 with open('audit_report.json', 'w') as f:
     json.dump(audit_report, f, indent=4)
 
