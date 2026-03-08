@@ -1,6 +1,6 @@
 import boto3
 
-# Create an IAM client
+# Create an IAM client!
 iam = boto3.client('iam')
 
 # List of users to check MFA status
