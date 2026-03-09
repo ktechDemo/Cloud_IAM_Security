@@ -11,8 +11,8 @@
         "UserName": "auditor_user",
         "HasMFA": true,
         "Policies": [
-            "IAMUserChangePassword",
-            "AWSCloudTrail_ReadOnlyAccess"
+            "IAMReadOnlyAccess",
+            "IAMUserChangePassword"
         ]
     },
     {
