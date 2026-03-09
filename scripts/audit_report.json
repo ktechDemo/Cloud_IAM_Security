@@ -2,17 +2,26 @@
     {
         "UserName": "admin_user",
         "HasMFA": true,
-        "Policies": []
+        "Policies": [
+            "AdministratorAccess",
+            "IAMUserChangePassword"
+        ]
     },
     {
         "UserName": "auditor_user",
         "HasMFA": true,
-        "Policies": []
+        "Policies": [
+            "IAMUserChangePassword",
+            "AWSCloudTrail_ReadOnlyAccess"
+        ]
     },
     {
         "UserName": "dev_user",
-        "HasMFA": true,
-        "Policies": []
+        "HasMFA": false,
+        "Policies": [
+            "IAMUserChangePassword",
+            "PowerUserAccess"
+        ]
     },
     {
         "UserName": "ktech",
