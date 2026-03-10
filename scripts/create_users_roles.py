@@ -32,7 +32,7 @@ for user, group in users.items():
 policies = {
 'Admins': 'arn:aws:iam::aws:policy/AdministratorAccess',
 'Developers': 'arn:aws:iam::aws:policy/PowerUserAccess',
-'Auditors': 'arn:aws:iam::aws:policy/ReadOnlyAccess'
+'Auditors': 'arn:aws:iam::aws:policy/IAMReadOnlyAccess'
 }
 
 for group, policy_arn in policies.items():
